@@ -1,8 +1,16 @@
-<h1>Add your fave cocktail:</h1>
+<nav class="navbar fixed-top navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="https://static.thenounproject.com/png/100531-200.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    Cocktails & Dreams
+  </a>
+</nav>
 
-<%= simple_form_for(@cocktail) do |f| %>
+<h1>Your New Cocktail</h1>
+
+<%= simple_form_for @cocktail do |f| %>
   <%= f.input :name %>
-  <%= f.submit %>
-  <%= link_to "Back to List", cocktails_path, class: "btn btn-new" %>
-
+  <%= f.input :photo, as: :file, class: "form-center" %>
+  <%= f.button :submit, class: "btn btn-light form-center" %>
 <% end %>
+<%= link_to("Back", cocktails_path, class: "btn btn-light mt-3") %>
+

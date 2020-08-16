@@ -1,3 +1,24 @@
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.app-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+    font-size: 65px;
+    color: white;
+    margin-bottom: 88px;
+  }
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li{
+    padding: 4px;
+  }
